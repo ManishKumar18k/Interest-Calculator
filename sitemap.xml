@@ -1,25 +1,19 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://interest-calculator.pubgloverproshot.workers.dev/</loc>
-    </url>
-
-    <url>
-        <loc>https://interest-calculator.pubgloverproshot.workers.dev/about.html</loc>
-    </url>
-
-    <url>
-        <loc>https://interest-calculator.pubgloverproshot.workers.dev/contact.html</loc>
-    </url>
-
-    <url>
-        <loc>https://interest-calculator.pubgloverproshot.workers.dev/privacy.html</loc>
-    </url>
-
-    <url>
-        <loc>https://interest-calculator.pubgloverproshot.workers.dev/terms.html</loc>
-    </url>
-
+  <url>
+    <loc>https://interest-calculator.pubgloverproshot.workers.dev/</loc>
+  </url>
+  <url>
+    <loc>https://interest-calculator.pubgloverproshot.workers.dev/about.html</loc>
+  </url>
+  <url>
+    <loc>https://interest-calculator.pubgloverproshot.workers.dev/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://interest-calculator.pubgloverproshot.workers.dev/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://interest-calculator.pubgloverproshot.workers.dev/terms.html</loc>
+  </url>
 </urlset>

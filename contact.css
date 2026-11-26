@@ -5,6 +5,32 @@
     padding: 25px 22px 70px;
 }
 
+
+
+/* Email link */
+.contact-email {
+    display: inline-block;
+    margin-top: 12px;
+    color: #7db2ff;
+    font-size: 13px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.contact-email:hover {
+    color: #ffffff;
+}
+
+/* Successful form submission message */
+.form-success {
+    color: #4de0b2;
+    background: #102b25;
+    border: 1px solid #23634d;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
 /* HERO */
 
 .contact-hero {

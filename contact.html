@@ -47,7 +47,6 @@
     <!-- CONTACT PAGE -->
     <main class="contact-main">
 
-        <!-- HERO -->
         <section class="contact-hero">
 
             <div class="contact-badge">GET IN TOUCH</div>
@@ -65,7 +64,6 @@
         <!-- CONTACT CONTENT -->
         <section class="contact-grid">
 
-            <!-- LEFT INFORMATION -->
             <div class="contact-info">
 
                 <div class="contact-info-card">
@@ -94,9 +92,10 @@
                         inquiries, please send us an email.
                     </p>
 
-                    <div class="contact-email-note">
-                        Add your real contact email address here.
-                    </div>
+                    <a class="contact-email"
+                       href="mailto:pubgloverproshot@gmail.com">
+                       pubgloverproshot@gmail.com
+                    </a>
 
                 </div>
 
@@ -133,16 +132,35 @@
             </div>
 
 
-            <!-- CONTACT FORM -->
+            <!-- REAL EMAIL FORM -->
             <div class="contact-form-card">
 
                 <h2>Send Us a Message</h2>
 
                 <p class="form-subtitle">
-                    Fill out the form below with your question or feedback.
+                    Fill out the form below. Your message will be sent to our email.
                 </p>
 
-                <form id="contactForm">
+                <form
+                    id="contactForm"
+                    action="https://formsubmit.co/pubgloverproshot@gmail.com"
+                    method="POST">
+
+                    <!-- Email subject -->
+                    <input type="hidden"
+                           name="_subject"
+                           value="New Message - Interest Calculator Website">
+
+                    <!-- Email display template -->
+                    <input type="hidden"
+                           name="_template"
+                           value="table">
+
+                    <!-- Redirect after successful submission -->
+                    <input type="hidden"
+                           name="_next"
+                           value="https://interest-calculator.pubgloverproshot.workers.dev/contact.html?sent=1">
+
 
                     <div class="contact-field">
 
@@ -181,7 +199,7 @@
                         <input
                             type="text"
                             id="subject"
-                            name="subject"
+                            name="visitor_subject"
                             placeholder="What is your message about?"
                             required
                             maxlength="150">
@@ -211,9 +229,9 @@
                     <p id="formMessage" class="form-message"></p>
 
                     <p class="form-note">
-                        This form is currently a demo and does not send
-                        messages to our email. A working contact service
-                        will be connected in a future update.
+                        Your message will be delivered to our contact email
+                        through our form service. Please do not include
+                        passwords, banking details or sensitive personal information.
                     </p>
 
                 </form>
@@ -223,7 +241,7 @@
         </section>
 
 
-        <!-- EXTRA -->
+        <!-- BOTTOM SECTION -->
         <section class="contact-bottom">
 
             <h2>Thank You for Visiting</h2>
@@ -303,25 +321,24 @@
 
     <script>
 
-        // Update current year
+        // Update footer year
         document.getElementById("contactYear").textContent =
             new Date().getFullYear();
 
 
-        // Contact form demo
-        const contactForm = document.getElementById("contactForm");
-        const formMessage = document.getElementById("formMessage");
+        // Show message after redirect from successful submission
+        const params = new URLSearchParams(window.location.search);
 
-        contactForm.addEventListener("submit", function(event) {
+        if (params.get("sent") === "1") {
 
-            event.preventDefault();
+            const formMessage = document.getElementById("formMessage");
 
             formMessage.textContent =
-                "Thank you! The form design is working, but email sending is not connected yet.";
+                "Thank you! Your message has been submitted. We will review it soon.";
 
-            formMessage.className = "form-message form-warning";
+            formMessage.className = "form-message form-success";
 
-        });
+        }
 
     </script>
 

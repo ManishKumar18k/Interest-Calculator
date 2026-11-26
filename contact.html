@@ -4,234 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Interest Calculator</title>
+    <meta name="description" content="Contact Interest Calculator. Send us your feedback, suggestions or questions.">
 
-    <title>Contact Us - Interest Calculator</title>
-
-    <meta name="description" content="Contact Interest Calculator with questions, feedback, suggestions or website-related inquiries.">
-
-    <meta name="robots" content="index, follow">
-
-    <link rel="icon" type="image/png"
-    href="https://raw.githubusercontent.com/ManishKumar18k/Interest-Calculator/main/Glossy%20Rupee%20Investment%20Growth%20Icon.png">
-
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact.css">
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
-        <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">₹</span>
+            Interest Calculator
+        </a>
 
-            <a href="index.html" class="brand">
-                <img src="https://raw.githubusercontent.com/ManishKumar18k/Interest-Calculator/main/Glossy%20Rupee%20Investment%20Growth%20Icon.png" alt="Interest Calculator Logo">
-
-                <span>Interest<span class="brand-highlight">Calculator</span></span>
-            </a>
-
-            <nav class="nav-links">
-                <a href="index.html#calculator">Calculator</a>
-                <a href="index.html#guide">Guide</a>
-                <a href="index.html#faq">FAQ</a>
-            </nav>
-
-            <a href="index.html#calculator" class="nav-button">
-                Calculate Now
-            </a>
-
-        </div>
+        <a href="index.html" class="home-btn">← Home</a>
     </header>
 
-
-    <!-- CONTACT PAGE -->
-    <main class="contact-main">
+    <main class="contact-container">
 
         <section class="contact-hero">
+            <div class="tag">CONTACT US</div>
 
-            <div class="contact-badge">GET IN TOUCH</div>
-
-            <h1>We'd Love to <span>Hear From You</span></h1>
+            <h1>We'd love to <span>hear from you.</span></h1>
 
             <p>
-                Have a question, suggestion or feedback? Feel free to contact us.
-                We are always happy to hear from our visitors.
+                Have a question, suggestion or feedback?
+                Send us a message. We are always happy to hear from you.
             </p>
-
         </section>
 
-
-        <!-- CONTACT CONTENT -->
-        <section class="contact-grid">
+        <section class="contact-card">
 
             <div class="contact-info">
+                <div class="info-icon">✉</div>
 
-                <div class="contact-info-card">
+                <h2>Get in touch</h2>
 
-                    <div class="contact-icon">💬</div>
-
-                    <h2>Contact Information</h2>
-
-                    <p>
-                        If you have questions about our calculator or want to
-                        share suggestions to improve our website, you can
-                        contact us using the information below.
-                    </p>
-
-                </div>
-
-
-                <div class="contact-info-card">
-
-                    <div class="contact-icon">✉️</div>
-
-                    <h3>Email Support</h3>
-
-                    <p>
-                        For website-related questions, feedback or other
-                        inquiries, please send us an email.
-                    </p>
-
-                    <a class="contact-email"
-                       href="mailto:pubgloverproshot@gmail.com">
-                       pubgloverproshot@gmail.com
-                    </a>
-
-                </div>
-
-
-                <div class="contact-info-card">
-
-                    <div class="contact-icon">🕒</div>
-
-                    <h3>Response Time</h3>
-
-                    <p>
-                        We try to review messages and respond as soon as
-                        possible. Response time may vary depending on
-                        the number of inquiries.
-                    </p>
-
-                </div>
-
-
-                <div class="contact-info-card">
-
-                    <div class="contact-icon">📝</div>
-
-                    <h3>Feedback & Suggestions</h3>
-
-                    <p>
-                        Your suggestions help us improve the website,
-                        make the calculator easier to use and add
-                        useful features in the future.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- REAL EMAIL FORM -->
-            <div class="contact-form-card">
-
-                <h2>Send Us a Message</h2>
-
-                <p class="form-subtitle">
-                    Fill out the form below. Your message will be sent to our email.
+                <p>
+                    If you have any questions, feedback or ideas
+                    regarding our Interest Calculator, feel free to contact us.
                 </p>
 
-                <form
-                    id="contactForm"
-                    action="https://formsubmit.co/pubgloverproshot@gmail.com"
-                    method="POST">
+                <div class="email-box">
+                    <span>Email Address</span>
+                    <a href="mailto:pubgloverproshot@gmail.com">
+                        pubgloverproshot@gmail.com
+                    </a>
+                </div>
 
-                    <!-- Email subject -->
-                    <input type="hidden"
-                           name="_subject"
-                           value="New Message - Interest Calculator Website">
+                <div class="info-note">
+                    <span>💡</span>
+                    <p>
+                        We welcome your feedback and suggestions
+                        to improve our website.
+                    </p>
+                </div>
+            </div>
 
-                    <!-- Email display template -->
-                    <input type="hidden"
-                           name="_template"
-                           value="table">
+            <div class="contact-form-area">
 
-                    <!-- Redirect after successful submission -->
-                    <input type="hidden"
-                           name="_next"
-                           value="https://interest-calculator.pubgloverproshot.workers.dev/contact.html?sent=1">
+                <h2>Send us a message</h2>
+                <p class="form-subtitle">
+                    Write your message below and send it directly through Gmail.
+                </p>
 
+                <form id="contactForm">
 
-                    <div class="contact-field">
-
-                        <label for="name">Full Name</label>
-
+                    <div class="form-group">
+                        <label for="name">Your Name (Optional)</label>
                         <input
                             type="text"
                             id="name"
-                            name="name"
                             placeholder="Enter your name"
-                            required
-                            maxlength="100">
-
+                        >
                     </div>
 
-
-                    <div class="contact-field">
-
-                        <label for="email">Email Address</label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required
-                            maxlength="150">
-
-                    </div>
-
-
-                    <div class="contact-field">
-
-                        <label for="subject">Subject</label>
-
-                        <input
-                            type="text"
-                            id="subject"
-                            name="visitor_subject"
-                            placeholder="What is your message about?"
-                            required
-                            maxlength="150">
-
-                    </div>
-
-
-                    <div class="contact-field">
-
+                    <div class="form-group">
                         <label for="message">Your Message</label>
-
                         <textarea
                             id="message"
-                            name="message"
                             rows="6"
                             placeholder="Write your message here..."
                             required
-                            maxlength="2000"></textarea>
-
+                        ></textarea>
                     </div>
 
-
-                    <button type="submit" class="contact-submit">
-                        Send Message →
+                    <button type="submit" class="send-btn">
+                        Send Message <span>→</span>
                     </button>
 
-                    <p id="formMessage" class="form-message"></p>
-
-                    <p class="form-note">
-                        Your message will be delivered to our contact email
-                        through our form service. Please do not include
-                        passwords, banking details or sensitive personal information.
+                    <p class="privacy-note">
+                        Clicking Send Message will open Gmail with our email address.
+                        You can review your message and send it from Gmail.
                     </p>
 
                 </form>
@@ -240,106 +104,56 @@
 
         </section>
 
-
-        <!-- BOTTOM SECTION -->
-        <section class="contact-bottom">
-
-            <h2>Thank You for Visiting</h2>
-
-            <p>
-                We appreciate your interest in Interest Calculator.
-                Your feedback and ideas help us make our website more useful.
-            </p>
-
-            <a href="index.html" class="back-home-button">
-                ← Back to Home
-            </a>
-
-        </section>
-
     </main>
 
-
-    <!-- FOOTER -->
     <footer class="footer">
+        <p>© <span id="year"></span> Interest Calculator. All rights reserved.</p>
 
-        <div class="footer-main">
-
-            <div class="footer-brand">
-
-                <a href="index.html" class="brand footer-logo">
-                    <img src="https://raw.githubusercontent.com/ManishKumar18k/Interest-Calculator/main/Glossy%20Rupee%20Investment%20Growth%20Icon.png" alt="Interest Calculator Logo">
-
-                    <span>Interest<span class="brand-highlight">Calculator</span></span>
-                </a>
-
-                <p>
-                    A simple and free online tool to calculate interest
-                    and understand your total amount.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <h3>Quick Links</h3>
-
-                <a href="index.html#calculator">Calculator</a>
-                <a href="index.html#guide">Interest Guide</a>
-                <a href="index.html#faq">FAQ</a>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <h3>Information</h3>
-
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-
-            </div>
-
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms</a>
         </div>
-
-
-        <div class="footer-bottom">
-
-            <p>© <span id="contactYear"></span> Interest Calculator. All rights reserved.</p>
-
-            <p class="disclaimer">
-                For informational and educational purposes only.
-            </p>
-
-        </div>
-
     </footer>
 
-
     <script>
+        const contactForm = document.getElementById("contactForm");
 
-        // Update footer year
-        document.getElementById("contactYear").textContent =
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (message === "") {
+                alert("Please write your message.");
+                return;
+            }
+
+            const receiver = "pubgloverproshot@gmail.com";
+            const subject = "Message from Interest Calculator";
+
+            let emailBody = "";
+
+            if (name !== "") {
+                emailBody += "Name: " + name + "\n\n";
+            }
+
+            emailBody += "Message:\n" + message;
+
+            const gmailURL =
+                "https://mail.google.com/mail/?view=cm&fs=1" +
+                "&to=" + encodeURIComponent(receiver) +
+                "&su=" + encodeURIComponent(subject) +
+                "&body=" + encodeURIComponent(emailBody);
+
+            window.open(gmailURL, "_blank");
+
+        });
+
+        document.getElementById("year").textContent =
             new Date().getFullYear();
-
-
-        // Show message after redirect from successful submission
-        const params = new URLSearchParams(window.location.search);
-
-        if (params.get("sent") === "1") {
-
-            const formMessage = document.getElementById("formMessage");
-
-            formMessage.textContent =
-                "Thank you! Your message has been submitted. We will review it soon.";
-
-            formMessage.className = "form-message form-success";
-
-        }
-
     </script>
 
 </body>
